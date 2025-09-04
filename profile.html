@@ -35,8 +35,13 @@
     <meta http-equiv="cleartype" content="on">
 
     <!-- Custom head snippets -->
-    <!-- Various apple-touch-icon, favicon and meta tags -->
-    <!-- ... (keeping the existing meta and link tags but properly indented) ... -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="https://Ary7167.github.io/assets/css/academicons.css"/>
 
@@ -65,23 +70,98 @@
     <![endif]-->
 
     <div class="masthead">
-        <!-- ... Rest of the body content with proper indentation ... -->
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav id="site-nav" class="greedy-nav">
+                    <button><div class="navicon"></div></button>
+                    <ul class="visible-links">
+                        <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://Ary7167.github.io/">Aryan Koganti</a></li>
+                        <li class="masthead__menu-item"><a href="https://Ary7167.github.io/">About</a></li>
+                        <li class="masthead__menu-item"><a href="https://Ary7167.github.io/publications/">Publications</a></li>
+                        <li class="masthead__menu-item"><a href="https://Ary7167.github.io/projects/">Projects</a></li>
+                        <li class="masthead__menu-item"><a href="https://Ary7167.github.io/contact/">Contact</a></li>
+                    </ul>
+                    <ul class="hidden-links hidden"></ul>
+                </nav>
+            </div>
+        </div>
     </div>
 
     <div id="main" role="main">
-        <!-- Main content section -->
         <div class="sidebar sticky">
-            <!-- Sidebar content -->
+            <div itemscope itemtype="http://schema.org/Person">
+                <div class="author__avatar">
+                    <img src="https://via.placeholder.com/150" alt="Aryan Koganti" itemprop="image">
+                </div>
+                <div class="author__content">
+                    <h3 class="author__name" itemprop="name">Aryan Koganti</h3>
+                    <p class="author__bio" itemprop="description">Passionate about [Your Field] and always learning!</p>
+                </div>
+                <div class="author__urls-wrapper">
+                    <button class="btn btn--inverse">Follow</button>
+                    <ul class="author__urls social-icons">
+                        <li><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> [Your City, Country]</li>
+                        <li><a href="mailto:your.email@example.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/Ary7167" target="_blank"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+                        <!-- Add more social links as needed -->
+                    </ul>
+                </div>
+            </div>
         </div>
         
         <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-            <!-- Article content -->
+            <meta itemprop="headline" content="Welcome to Aryan's Homepage!">
+            <meta itemprop="description" content="About me">
+
+            <div class="page__inner-wrap">
+                <header>
+                    <h1 class="page__title" itemprop="headline">Welcome to Aryan's Homepage!</h1>
+                </header>
+
+                <section class="page__content" itemprop="text">
+                    <p>Hello! I'm Aryan Koganti, and this is my personal website. I'm currently focused on [Your Studies/Work Field] and interested in [Specific Interests].</p>
+                    <p>I believe in the power of [Concept/Technology] to solve [Problem]. On this site, you'll find information about my academic journey, personal projects, and how to get in touch with me.</p>
+                    
+                    <h2>About Me</h2>
+                    <p>I am a [Your Student/Professional Status] at [Your University/Company]. My research/work interests include:</p>
+                    <ul>
+                        <li>Topic 1</li>
+                        <li>Topic 2</li>
+                        <li>Topic 3</li>
+                    </ul>
+                    <p>I enjoy [Hobbies/Activities] in my free time.</p>
+
+                    <h2>News & Updates</h2>
+                    <ul>
+                        <li><strong>[Date]:</strong> Successfully completed [Achievement/Course].</li>
+                        <li><strong>[Date]:</strong> Started a new project on [Project Topic].</li>
+                        <li><strong>[Date]:</strong> Attended [Conference/Workshop] and presented [Your Work].</li>
+                    </ul>
+
+                    <p>Feel free to explore my site and connect with me!</p>
+                </section>
+
+                <footer class="page__meta">
+                    <p class="page__last-modified">Last updated: <time datetime="2023-10-27T12:00:00Z">October 27, 2023</time></p>
+                </footer>
+            </div>
         </article>
     </div>
 
     <div class="page__footer">
         <footer>
-            <!-- Footer content -->
+            <div class="page__footer-follow">
+                <ul class="social-icons">
+                    <li><strong>Follow me:</strong></li>
+                    <li><a href="https://twitter.com/yourprofile" target="_blank" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+                    <li><a href="https://github.com/Ary7167" target="_blank" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+                    <li><a href="https://stackoverflow.com/users/yourprofile" target="_blank" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stack Overflow</a></li>
+                    <!-- Add more social links -->
+                </ul>
+            </div>
+            <div class="page__footer-copyright">&copy; 2023 Aryan Koganti. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
         </footer>
     </div>
 
@@ -91,7 +171,7 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '', 'auto');
+        ga('create', '', 'auto'); // Replace with your Google Analytics ID if you have one
         ga('send', 'pageview');
     </script>
 </body>
