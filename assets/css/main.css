@@ -1,0 +1,131 @@
+/* assets/css/main.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.masthead {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.masthead a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+#main {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #eee;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.page {
+    flex: 3;
+    padding: 20px;
+}
+
+.author__avatar img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.author__name {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.author__bio {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.author__urls {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.author__urls li {
+    margin-bottom: 5px;
+}
+
+.author__urls a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.page__title {
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.page__content p {
+    margin-bottom: 1em;
+}
+
+.page__footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+.page__footer a {
+    color: #007bff; /* Adjust link color */
+    text-decoration: none;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; /* For horizontal icons in footer */
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+/* Basic responsive adjustments */
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column;
+    }
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        max-width: none;
+    }
+    .masthead__menu ul {
+        flex-direction: column;
+    }
+    .masthead__menu-item {
+        margin: 5px 0;
+    }
+}
