@@ -1,0 +1,15 @@
+/* assets/css/academicons.css */
+/* Placeholder for Academicons CSS */
+/* You will need to get the actual CSS file for academicons and place its content here or link to a CDN. */
+/* Example for a single icon definition (incomplete): */
+.ai {
+  font-family: 'Academicons';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* You will need Font Awesome for the fas and fab icons as well! */
+/* Your HTML currently links to a CDN for MathJax, but you might need a Font Awesome CDN too if not included in main.css */
